@@ -16,7 +16,7 @@ pipeline {
     environment {
         registry = "kodrclub/geekshub-django"
         registryCredential = 'DockerHub'
-        apiServer = "https://api.hub.docker.com:8443"
+        apiServer = "https://192.168.1.141:8443"
         devNamespace = "default"
         minikubeCredential = 'minikube-auth-token'
         imageTag = "${env.GIT_BRANCH + '_' + env.BUILD_NUMBER}"
