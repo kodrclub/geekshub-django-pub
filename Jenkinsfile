@@ -14,9 +14,9 @@ pipeline {
         disableConcurrentBuilds()
     }
     environment {
-        registry = "escarti/geekshub-django"
+        registry = "kodrclub/geekshub-django"
         registryCredential = 'Docker'
-        apiServer = "https://192.168.99.101:8443"
+        apiServer = "https://api.hub.docker.com:8443"
         devNamespace = "default"
         minikubeCredential = 'minikube-auth-token'
         imageTag = "${env.GIT_BRANCH + '_' + env.BUILD_NUMBER}"
